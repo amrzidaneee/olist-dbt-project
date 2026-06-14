@@ -276,8 +276,8 @@ dbt docs serve
 * Data Quality Testing
 * Data Validation
 * Power BI Reporting
+* DAX (Time Intelligence, Ranking, Customer Analytics)
 * CI/CD with GitHub Actions
-
 ---
 
 ## Dataset
