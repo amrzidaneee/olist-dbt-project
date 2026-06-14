@@ -225,6 +225,18 @@ Analysis of the Olist dataset revealed several important findings:
 * Revenue showed strong growth between **2017 and 2018**.
 
 ---
+## Advanced DAX Measures
+
+In addition to standard aggregations, the dashboard includes 
+custom DAX measures for deeper analysis:
+
+* Revenue Growth % and Previous Year Revenue (year-over-year comparison)
+* Cumulative Revenue (running total)
+* Category Rank (dynamic ranking of product categories by revenue)
+* Repeat Customers % (customer retention analysis)
+* Top Category (dynamic top-performing category)
+
+---
 
 ## Running the Project
 
