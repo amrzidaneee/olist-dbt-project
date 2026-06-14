@@ -1,0 +1,35 @@
+name: dbt CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  dbt-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install dbt-duckdb
+
+      - name: Set DBT_PROFILES_DIR
+        run: echo "DBT_PROFILES_DIR=$(pwd)" >> $GITHUB_ENV
+
+      - name: Seed data
+        run: dbt seed
+
+      - name: Run models
+        run: dbt run
+
+      - name: Run tests
+        run: dbt test

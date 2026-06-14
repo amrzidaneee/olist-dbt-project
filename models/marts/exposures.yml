@@ -1,0 +1,22 @@
+version: 2
+
+exposures:
+  - name: olist_sales_dashboard
+    type: dashboard
+    maturity: medium
+    url: "local-path-placeholder"
+    description: >
+      Power BI dashboard analyzing Olist e-commerce sales performance,
+      including revenue trends, customer behavior, seller performance,
+      and product category analysis.
+
+    depends_on:
+      - ref('fact_order_items')
+      - ref('dim_customers')
+      - ref('dim_sellers')
+      - ref('dim_products')
+      - ref('dim_date')
+
+    owner:
+      name: Amr Zidan
+      email: amrzidan7422@gmail.com
