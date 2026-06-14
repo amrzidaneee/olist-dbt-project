@@ -1,4 +1,3 @@
-```markdown
 # Olist E-Commerce Data Pipeline (dbt + DuckDB)
 
 ![dbt](https://img.shields.io/badge/dbt-Analytics%20Engineering-orange)
